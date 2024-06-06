@@ -24,6 +24,9 @@ const App = () => {
   return (
     <div>
       <h1>Todo List</h1>
+      {todos.map((todo) => {
+        return <p key={todo.id}>{todo.title}</p>
+      })}
     </div>
   );
 }
